@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fonction</title>
+</head>
+<body>
+    <script>
+
+        function salutation() {
+            console.log("c'est houda");
+            
+        }
+        salutation();
+
+
+
+        function Somme(nb1,nb2) {
+            return nb1+nb2;
+        }
+        console.log("la somme est",Somme(3,5));
+        Somme(3,5);
+
+        //exercice
+
+        function test(nb1){
+            if (nb1%2===0) {
+                console.log("le nombre est pair")
+                
+                
+            }
+            else
+            console.log("le nombre impair")
+        }
+            test(10)
+
+            //exercice
+           function test2(nb1) {
+            return (nb1%2===0)?  console.log("le nombre est pair"):console.log("le nombre impair")
+            
+
+            
+           }
+
+        test2(11)
+        //exercice
+        function inc(nom) {
+            return nom=nom+1;
+
+            
+        }
+      console.log(inc(2))  ;
+    </script>
+    
+</body>
+</html>
