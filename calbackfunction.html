@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>fonction</title>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, impedit!</p>
+    <p>le resultat du calcul est:</p>
+    <p id="demo"></p>
+    <script>
+function MyDisplayer(x){
+    document.getElementById("demo").innerHTML=x;
+
+}
+
+function MyCalculator(num1,num2, MyCallBack){
+    let somme=num1+num2;
+    MyCallBack(somme);
+}
+MyCalculator(1,2,MyDisplayer);
+    </script>
+</body>
+</html>

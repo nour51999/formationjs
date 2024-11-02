@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrayitteration</title>
+</head>
+<body>
+    <h1>java script</h1>
+    <script>
+//foreach ittere chaque element du tableaux et elle retourne pas un tableau
+        const numbers=[45,5,8,16,25];
+        function double(num){
+            console.log(num*2,"function for each");
+        }
+        numbers.forEach(double);
+//map retour un nouveau tableau et ittere chaque elements
+        const num=[1,2,3,4,5];
+        function d(nbr){
+            return nbr*3;
+
+        }
+        const multiplication=num.map(d);
+        console.log(multiplication,"function map");
+//filtre retourne tous les élément qui satisfait  la constion
+        const numbers1=[1,2,3,4,5];
+        const eventnumbers=numbers1.filter((num)=>num%2===0);
+        console.log(eventnumbers,"function filter");  
+// reduit le tableau 
+       const numbers2=[1,2,3,4,5];
+       const somme=numbers2.reduce((accumulator,currentvalue) => accumulator+currentvalue,1);
+       console.log(somme);
+//retourne si la condtion trus ou false    
+       const numbers3=[2,4,6,8,10];
+       const allven=numbers3.every((num)=>num%2===0)
+       console.log(allven);
+
+       const fruits=["pomme","banane","orange","fraise"];
+       const indexofelement=fruits.indexOf("citron");
+       console.log(indexofelement);
+//retourne le premier element qui s'attisfait la condition
+       const result=fruits.find((fruits)=>fruits.length>5)
+       console.log(result);
+
+       const numbers4=[10,20,30,40,50];
+       const index=numbers4.findIndex((num)=>num>40)
+       console.log(index);
+
+
+    </script>
+</body>
+</html>
